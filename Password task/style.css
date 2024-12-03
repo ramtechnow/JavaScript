@@ -1,0 +1,30 @@
+/* Design */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.overall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+}
+.Password_div{
+    display: inline-block;
+    position: relative;
+    border: 3px solid #000;
+}
+.Password_div input{
+    padding: 10px 5px;
+    outline: none;
+    border: 0;
+    font-size: 25px;
+}
+.pass-icon{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1 (Async & sync)</title>
+</head>
+
+<body>
+    <h1 id="txt">Wait for one scond current time is visible</h1>
+
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <script src="./index.js"></script>
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      color: #333;
+      padding: 20px;
+    }
+    .timer {
+      font-size: 3rem;
+      margin: 20px 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Simple Timer</h1>
+  <div class="timer" id="timer">00:00:00</div>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+  <button id="reset">Reset</button>
+
+  <script>
+    let timerInterval;
+    let secondsElapsed = 0;
+
+    const timerDisplay = document.getElementById('timer');
+    const startButton = document.getElementById('start');
+    const stopButton = document.getElementById('stop');
+    const resetButton = document.getElementById('reset');
+
+    function updateTimerDisplay() {
+      const hours = String(Math.floor(secondsElapsed / 3600)).padStart(2, '0');
+      const minutes = String(Math.floor((secondsElapsed % 3600) / 60)).padStart(2, '0');
+      const seconds = String(secondsElapsed % 60).padStart(2, '0');
+      timerDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+    }
+
+    function startTimer() {
+      if (timerInterval) return;
+      timerInterval = setInterval(() => {
+        secondsElapsed++;
+        updateTimerDisplay();
+      }, 1000);
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
+
+    function resetTimer() {
+      stopTimer();
+      secondsElapsed = 0;
+      updateTimerDisplay();
+    }
+
+    startButton.addEventListener('click', startTimer);
+    stopButton.addEventListener('click', stopTimer);
+    resetButton.addEventListener('click', resetTimer);
+
+    updateTimerDisplay();
+  </script>
+</body>
+</html> -->

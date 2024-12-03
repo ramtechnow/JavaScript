@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .overall{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 300px;
+            height: 400px;
+            border: 2px solid;
+            padding: 10px 15px;
+            margin-top: 50px;
+            box-shadow: 2px 3px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="overall">
+        <div class="box">
+            <h1>Calculator</h1>
+            <label>A Value</label>
+            <input type="text" id="Value1"><br><br>
+            <label>B Value</label>
+            <input type="text" id="Value2"><br><br>
+            <label>Calc :</label>
+            <input type="text" id="oper"><br><br>
+            <button onclick="simple()">Calculate</button>
+            <h1>Ans :<span id="result"></span></h1>
+        </div>
+    </div>
+    <script src="./task.js"></script>
+</body>
+
+</html>
